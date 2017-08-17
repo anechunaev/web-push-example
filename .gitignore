@@ -1,4 +1,6 @@
-dist/
-node_modules/
 .awcache-browser/
 .awcache-server/
+dist/
+keys/
+!keys/.gitkeep
+node_modules/

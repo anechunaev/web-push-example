@@ -31,6 +31,11 @@ declare module '*.svg' {
 	export default _;
 }
 
+declare module '*.key' {
+	const _: string;
+	export default _;
+}
+
 declare module '*.less' {
 	type Style = {
 		[key: string]: string;

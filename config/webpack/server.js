@@ -90,7 +90,12 @@ const config = new WebpackConfig().extend({
 				test: /\.jsx?$/,
 				loader: 'babel-loader',
 				exclude: /node_modules(?!(\/@tutu.*))/
-			}
+			},
+			{
+				test: /\.key$/i,
+				include: paths.keys,
+				loader: 'raw-loader',
+			},
 		],
 	},
 

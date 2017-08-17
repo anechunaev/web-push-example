@@ -11,4 +11,5 @@ module.exports = {
 	static: path.join(root, 'static'),
 	dist: path.join(root, 'dist'),
 	public: path.join(root, 'dist', 'public'),
+	keys: path.join(root, 'keys'),
 };

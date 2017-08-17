@@ -11,7 +11,7 @@ import paths from '../../config/paths';
 
 export default new WebpackConfig().merge({
 	resolve: {
-		extensions: ['.js', '.jsx', '.ts', '.tsx', '.css', '.less'],
+		extensions: ['.js', '.jsx', '.ts', '.tsx', '.css', '.less', '.key'],
 		modules: [
 			paths.root,
 			'node_modules',
@@ -36,6 +36,11 @@ export default new WebpackConfig().merge({
 						},
 					},
 				],
+			},
+			{
+				test: /\.key$/i,
+				include: paths.keys,
+				loader: 'raw-loader',
 			},
 		],
 	},
